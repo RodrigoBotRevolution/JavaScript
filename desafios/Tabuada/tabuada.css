@@ -1,0 +1,25 @@
+@charset "UFT-8";
+
+body{
+  background-color: rgb(102, 102, 239);
+  color: white;
+}
+
+h1{
+  text-align: center;
+}
+
+section{
+  background-color: white;
+  color: black;
+  font: normal 12pt Arial;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.357);
+  margin: auto;
+  padding: 10px;
+}
+footer{
+  text-align: center;
+  font-style: italic;
+}

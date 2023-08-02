@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somando Valores</title>
+    <style>
+      body {
+        background-color: rgb(92, 91, 91);
+        text-align: center;
+        font: bold 15pt Arial;
+      }
+      div {
+        background-color: #004ba8;
+        width: 100px;
+        margin: auto;
+      }
+      input {
+        font: normal 12pt Arial;
+        width: 80px;
+        text-align: center;
+      }
+      input.sum {
+        margin: 10px;
+      }
+
+      div#res {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Soma de Valores!</h1>
+
+    <input type="number" name="dig1" id="dig1" /> +
+    <input type="number" name="dig2" id="dig2" />
+    <input class="sum" type="button" value="Somar" onclick="somar()" />
+
+    <div id="res">Resultado</div>
+
+    <script>
+      function somar() {
+        var num1 = window.document.getElementById('dig1')
+        var num2 = window.document.getElementById('dig2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(num1.value)
+        var n2 = Number(num2.value)
+        var s = n1 + n2
+        res.innerHTML = `${s}`
+      }
+    </script>
+  </body>
+</html>

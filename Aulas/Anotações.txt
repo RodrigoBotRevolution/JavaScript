@@ -1,0 +1,219 @@
+	Curso Básico de JavaScript - Gustavo Guabanara
+
+/*Visto na Aula 6.*/
+
+
+>Comando JavaScript para realizar o somatório de dois número digitados pelo 
+o usuário na tela do navegador.
+
+
+
+<script>
+var n1= Number(window.document.prompt('Digite um número')
+var n2= Number(window.document.prompt('Digite outro número')
+
+s= n1+n2
+
+window.document.alert('A soma dos valores é ' + s)
+</script>
+
+>Place Holder ou template String (`${  }`)
+
+Ex.:
+
+Var nome = 'Rodrigo'
+var idade  =42
+var nota = 10
+ 
+*Entre crases digite:
+
+`O Aluno ${nome} de idade ${idade} anos tirou nota ${nota}. Parabéns.`
+
+>Resultado:
+
+O Aluno 'Rodrigo' de '42' anos tirou nota '10'. Parabéns!
+
+>CONVERTENDO UM NÚMERO EM UMA STRING<
+
+- String(Valor);
+
+-Valor.toString( )
+
+>FORMATANDO NÚMEROS<
+
+var n1 = 1543.5
+
+-formatando para 2 casas:
+
+n1.toFixed(2)
+
+>Resultado: '1543.50'
+
+-Vírgula ao invés de ponto:
+
+n1.toFixed(2).replace('.' , ',')
+
+>Resultado:
+
+'1545,50'
+
+>FORMATANDO UNIDADE MONETÁRIA<
+
+n1.toLocateString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+>Resultado:
+
+'R$ 1,545.50'
+
+===========================================================================================
+JavaScript - Aula 7
+
+<======  OPERADORES  =======>
+
+>Aritméticos;
+
+-Soma: 5+2=7;
+-Substração: 5-2=3;
+-Multiplicação: 5*2=10;
+-Divisão: 5/2=2,5;
+-Divisão Inteira: 5%2=1;
+-Exponeciação: 5**2=25
+
+>Atribuição;
+*Atribuição Simples:
+
+Ex.: var x = y
+
+var n = 3;
+
+*Auto Atribuições:
+
+Ex.:
+
+n = n+4, o resultado será 7.
+
+Também posso digitar n += 4, o resultado será o mesmo 7.
+
+Assim, para todos os operadores.
+
+*Incrementos
+
+Considere a atribuição n = 10 e queremos adicionar uma unidade
+poderiamos digite o seguinte comando:
+
+n += 1, resultado 11. Mas poderiamos Incrementar da seguinte forma:
+
+n++ ou ++n, o resultados seria 11.
+===============================================================
+
+>=== ====AULA 08 ===== ===<
+
+
+>Relacionais;
+">" - Maior;
+"<" - Menor;
+">=" - Maior igual;
+"<=" - Menor igual;
+"==" - igual;
+"!="  - Diferente.
+
+Resultados para esses caracteres:
+
+'True ou False'; 'Verdadeiro ou Falso'.
+
+>Lógicos;
+
+- "!": Negação;
+-  && : Lógica "E", Conjunção.
+-    ||  : Lógica "OU", Disjunção. 
+
+*Os Resultados serão apresentado no formato Booeleno: 'True' e 'False'.
+
+>Ternários;
+Símbolos utilizados nesses operadores:
+'?'e ':'
+Apresenta 3 elementos na sua componente:
+
+Ex.:
+
+var = 5.5
+
+média > 7?'APROVADO':'REPROVADO'
+
+Resultado: 'REPROVADO'
+
+==================================================================
+
+>============= AULA 13 ===============<
+
+-REPETIÇÕES-
+
+*Testes Lógico no início*
+
+while (condições) {
+
+}
+
+Ex.:
+
+var c =1
+while(c <= 6) {
+	console.log(`Passo ${c}`)
+	c++
+}
+
+Resultado:
+
+Passo 1
+Passo 2
+Passo 3
+Passo 4
+Passo 5
+Passo 6
+
+*Testes Lógico no Final*
+
+do{
+
+}while(condição)
+
+Ex.:
+
+var c = 1
+
+do{
+	console.log(`Passo ${c}`)
+	c++
+}while(c <= 6)
+
+Resultado:
+
+Passo 1
+Passo 2
+Passo 3
+Passo 4
+Passo 5
+Passo 6
+
+=====================================================================
+
+>======= AULA 14 ========<
+
+*REPETIÇÕES COM ESTRUTURAS DE CONTROLE*
+
+for (início; teste; incr){
+
+}
+
+Ex.:
+
+for(var c = 1; c <= 6; c++){
+
+}
+
+Resultado:
+
+1
+2
+3
+
